@@ -12,6 +12,7 @@ Simple GDPS Framework for GD 1.0-1.5!
 - Liking levels
 - Leaderboards (other than creator lb)
 - Comments
+- Discord Webhooks (off by default)
 - Rated levels!
   
 ## Unsupported (planned) features
