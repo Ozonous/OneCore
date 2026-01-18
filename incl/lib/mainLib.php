@@ -36,5 +36,32 @@ return 0; // User doesn't exist
 return $result["userId"];
 }
 }
+public function getDiff($diff, $auto, $demon) {
+// check if its auto
+if ($auto == 1) {
+return "auto";
+} else if ($demon == 1) {
+// check if its demon
+return "demon";
+} else {
+switch ($diff) {
+// you know the rest
+case 0:
+return "N/A";
+case 10:
+return "Easy";
+case 20;
+return "Normal";
+case 30:
+return "Hard";
+case 40:
+return "Harder";
+case 50:
+return "Insane";
+default:
+return "Unknown";
+}
+}
+}
 }
 ?>
