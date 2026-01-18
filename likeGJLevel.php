@@ -11,8 +11,8 @@ if (!isset($_POST["secret"])) {
 $levelID = $_POST["levelID"];
 
 // add 1 to likes
-$query = $db->prepare("UPDATE levels SET likes = likes + 1 WHERE levelID = $levelID");
-$query->execute();
+$query = $db->prepare("UPDATE levels SET likes = likes + 1 WHERE levelID = :levelID");
+$query->execute(":levelID" => $levelID);
 
 // return 1 to gd
 echo "1";
