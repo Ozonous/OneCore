@@ -10,10 +10,10 @@ Simple GDPS Framework for GD 1.0-1.5!
 - Retrieving levels
 - Downloads levels
 - Liking levels
-- Leaderboards (other than creator lb)
+- Leaderboards
 - Comments
 - Discord Webhooks (off by default)
-- Rated levels!
+- Rated levels
   
 ## Unsupported (planned) features
 - difficulty filters
