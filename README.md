@@ -34,7 +34,7 @@ Step 5: Edit all files in config/
 - Cvolton - the incl/lib/connection.php script (I just yoinked it straight from gmdprivateserver lol), and commenting is heavily referenced from their version of gmdprivateserver.
 - Caster - testing the core
 - Ozonous - creating the leaderboard in the dashboard directory
-- Renzbobz - Discord Webhook function (https://github.com/renzbobz/DiscordWebhook-PHP)
+- Renzbobz - Discord Webhook function - https://github.com/renzbobz/DiscordWebhook-PHP
 
 ## license
-GPL-3.0
+## GPL-3.0
