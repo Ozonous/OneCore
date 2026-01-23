@@ -14,10 +14,10 @@ Simple GDPS Framework for GD 1.0-1.5!
 - Comments
 - Discord Webhooks (off by default)
 - Rated levels
-- difficulty filters
+- Difficulty filters
   
 ## Unsupported (planned) features
-- none as of now
+- Viewing more levels from a specific user
 
 # Setup
 ## requirements
