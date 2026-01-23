@@ -57,26 +57,32 @@ switch ($type) {
     case 1:
         $order = "ORDER BY downloads DESC";
         break;
-// liked
     case 2:
+// liked
         $order = "ORDER BY likes DESC";
         break;
-// trending (most downloaded this week)
     case 3:
+// trending (most liked this week)
         $wheretype = "WHERE uploadDate >= DATE_SUB(NOW(), INTERVAL 7 DAY)";
-        $order = "ORDER BY downloads DESC";
+        $order = "ORDER BY likes DESC";
         break;
-// To the recent tab
     case 4:
+// recent tab
         $order = "ORDER BY levelID DESC";
         break;
-// featured
+    case 5:
+// view a users levels
+        $wheretype = "WHERE userID = :userid";
+        $params[":userid"] = $str;
+        $order = "ORDER BY levelID DESC";
+        break;
     case 6:
+// featured
         $wheretype = "WHERE featured != 0";
         $order = "ORDER BY levelID DESC";
         break;
-// spells tab
     case 7:
+// magic tab
         $wheretype = "WHERE length > 3";
         break;
 }
@@ -108,4 +114,4 @@ $levelObject = rtrim($levelObject, "|");
 $creatorObject = rtrim($creatorObject, "|");
 
 echo $levelObject . "#" . $creatorObject . "#9999:" . ($page * 10) . ":" . count($levels);
-?>
+?> 
