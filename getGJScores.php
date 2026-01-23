@@ -3,7 +3,7 @@ include "incl/lib/connection.php";
 require_once "incl/lib/injectionlibpatch.php";
 
 // check secret
-if (!isset($_POST["secret"])) {
+if (!isset($_POST["secret"]) || $_POST["secret"] !== "Wmfd2893gb7") {
 exit("-1");
 }
 
@@ -27,8 +27,7 @@ $output .= "1:".$user["userName"].":2:".$user["userId"].":3:".$user["stars"].":6
 
 
 echo rtrim($output, "|");
-}
-if ($type == "relative") {
+} else if ($type == "relative") {
 // global
 $query = $db->prepare("SELECT userId, userName, stars, icon, color1, color2 FROM users WHERE stars > 0 ORDER BY stars DESC");
 $query->execute();

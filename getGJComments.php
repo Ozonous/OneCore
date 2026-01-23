@@ -5,7 +5,7 @@ require_once "incl/lib/injectionlibpatch.php";
 $gs = new mainLib();
 
 // check secret
-if (!isset($_POST["secret"])) {
+if (!isset($_POST["secret"]) || $_POST["secret"] !== "Wmfd2893gb7") {
 exit("-1");
 }
 
